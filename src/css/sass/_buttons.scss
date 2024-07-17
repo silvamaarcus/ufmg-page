@@ -8,12 +8,12 @@ a {
   // fonte: 'p3' | tela: 'desktop'
   @include typeface-2(p3, desktop);
 
-  color: $white-dark;
+  color: $black-light;
 
   transition: 0.3s ease; // tempo de transição para efeito hover
 
   &:hover {
-    opacity: 0.7; // aplicar opacidade
+    font-size: bold !important;
   }
 }
 
@@ -46,7 +46,7 @@ option {
   display: inline-block;
   padding: 8px 24px;
 
-// use cores desejada...
+  // use cores desejada...
   color: $white-light;
   background: $primary-normal !important;
 
@@ -63,3 +63,19 @@ option {
   }
 }
 
+.btn-search {
+  cursor: pointer;
+  height: 46px;
+  width: 56px;
+
+  background-image: url("/assets/svg/icon-search.svg");
+  background-repeat: no-repeat; // ñ repetir icone
+  background-position: center center; // centralizar nos dois eixos
+
+  background-color: $white-light;
+  border: 0;
+  border-radius: 4px;
+
+  // colar o elemento (botao) no input
+  transform: translate3d(-5px, 0, 0); // descer 6px no eixo y
+}

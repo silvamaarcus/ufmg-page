@@ -254,6 +254,10 @@ $gutter: 30px;
 .w-75 {
   width: 75%;
 }
+// Largura de 60% do tamanho p/ o elemento em relação ao pai.
+.w-60 {
+  width: 60%;
+}
 // Largura de 50% do tamanho p/ o elemento em relação ao pai.
 .w-50 {
   width: 50%;
@@ -371,8 +375,9 @@ $gutter: 30px;
 
 // <===================== FIM DA CONFIGURAÇÃO PADRÃO =====================>
 
+// Section Banner
 .banner {
-  background-image: url("/public/assets/img/banner.png");
+  background-image: url("/assets/img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -383,6 +388,52 @@ $gutter: 30px;
   }
 }
 
+// Section Menu
 .bg-header {
   background-color: $primary-normal;
+}
+
+.content-mobile {
+  @include responsive(s) {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.no-break-mobile {
+  @include responsive(s) {
+    flex-direction: row;
+  }
+}
+
+.bg-menu {
+  background-color: $white-normal;
+
+  ul li {
+    list-style: none;
+  }
+
+  a {
+    border-right: 1px solid $black-light;
+    padding-right: 48px;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .menu-links {
+    @include responsive(s) {
+      padding: 16px 0px;
+      overflow-x: scroll; // rolagem suave
+      -webkit-overflow-scrolling: touch;
+      //* Esconder barra de rolagem em navegadores:
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+  .menu-links::-webkit-scrollbar {
+    //* Esconder barra de rolagem em navegadores:
+    display: none; /* Chrome, Safari, Opera */
+  }
 }

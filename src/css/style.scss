@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 @import "sass/colors";
 @import "sass/layout";
 @import "sass/spacing";
@@ -26,7 +25,7 @@ body {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background: $primary-normal
+    background: $primary-normal;
   }
 }
 
