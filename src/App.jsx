@@ -1,4 +1,4 @@
-import Calendar from "react-calendar";
+import Calendar from "./components/Filters/Calendar";
 import Filtro from "./components/Filters/Events";
 import Menu from "./components/Menu";
 
@@ -45,11 +45,11 @@ function App() {
           <h4 className="semi-bold text-center">Programação</h4>
           <div className="flex-column mt-3">
             <h6 className="bold">Filtros</h6>
-            <div className="flex-start-row gap-3 mt-3">
-              <div className="w-50">
+            <div className="flex-start-row gap-3 mt-3 filters-mobile">
+              <div className="w-100">
                 <Filtro />
               </div>
-              <div className="w-50">
+              <div className="w-100">
                 <Calendar />
               </div>
             </div>

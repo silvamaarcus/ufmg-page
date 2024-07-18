@@ -620,12 +620,18 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-#eventos {
-  box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.1);
+#eventos, .eventos-data {
+  box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1) !important;
 }
-#eventos:focus {
+#eventos:focus, .eventos-data:focus {
   border: 2px solid #1F3748;
   outline: none;
+}
+
+@media screen and (max-width: 960px) {
+  .filters-mobile {
+    flex-wrap: wrap;
+  }
 }
 
 .s-0 {
@@ -1715,12 +1721,12 @@ img {
 }
 
 .icon-s {
-  max-width: 36px;
+  max-width: 20px;
   transition: 0.5s ease;
 }
 @media screen and (max-width: 960px) {
   .icon-s {
-    max-width: 32px;
+    max-width: 18px;
   }
 }
 .icon-s:hover {
