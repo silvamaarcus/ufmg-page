@@ -65,12 +65,17 @@ function App() {
       <section className="container pt-1">
         <div className="grid-2 disappear"></div>
 
-        <div className="grid-10 flex gap-2 wrap-mobile">
-          <div>
-            <Cards />
+        <div className="grid-10">
+          <div className="flex gap-2 wrap-mobile">
+            <div>
+              <Cards />
+            </div>
+            <div>
+              <Cards />
+            </div>
           </div>
-          <div>
-            <Cards />
+          <div className="flex-center mt-3">
+            <button className="btn">Ver mais</button>
           </div>
         </div>
 
