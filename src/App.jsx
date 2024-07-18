@@ -1,3 +1,4 @@
+import Cards from "./components/Cards";
 import Calendar from "./components/Filters/Calendar";
 import Filtro from "./components/Filters/Events";
 import Menu from "./components/Menu";
@@ -45,7 +46,7 @@ function App() {
           <h4 className="semi-bold text-center">Programação</h4>
           <div className="flex-column mt-3">
             <h6 className="bold">Filtros</h6>
-            <div className="flex-start-row gap-3 mt-3 filters-mobile">
+            <div className="flex-start-row gap-3 mt-3 wrap-mobile">
               <div className="w-100">
                 <Filtro />
               </div>
@@ -64,9 +65,13 @@ function App() {
       <section className="container pt-1">
         <div className="grid-2 disappear"></div>
 
-        <div className="grid-10 flex flex-wrap gap-2">
-          <div></div>
-          <div></div>
+        <div className="grid-10 flex gap-2 wrap-mobile">
+          <div>
+            <Cards />
+          </div>
+          <div>
+            <Cards />
+          </div>
         </div>
 
         <div className="grid-2 disappear"></div>

@@ -448,7 +448,7 @@ $gutter: 30px;
   }
 }
 
-.filters-mobile {
+.wrap-mobile {
   @include responsive(s) {
     flex-wrap: wrap;
   }

@@ -6,15 +6,15 @@
 }
 
 .color-black {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .color-white {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .color-primary {
-  color: #1F3748;
+  color: #1F3748 !important;
 }
 
 .color-gray {
@@ -629,7 +629,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .filters-mobile {
+  .wrap-mobile {
     flex-wrap: wrap;
   }
 }
@@ -1295,6 +1295,14 @@
   gap: 40px !important;
 }
 
+.pb-min {
+  padding-bottom: 4px !important;
+}
+
+.mt-min {
+  margin-top: 4px !important;
+}
+
 .h0 {
   font-family: "Lexend", sans-serif;
   font-size: 120px;
@@ -1796,7 +1804,7 @@ option {
   display: inline-block;
   padding: 10px 70px;
   color: #FFFFFF;
-  background: #1F3748 !important;
+  background: #1F3748;
   border-radius: 4px;
   border: 0;
   font-family: "Public Sans", sans-serif;
@@ -1823,11 +1831,13 @@ option {
   transform: translate3d(-5px, 0, 0);
 }
 
-.btn-alt {
+.btn-alt,
+.btn-info,
+.btn-info-active {
   display: inline-block;
   padding: 10px 20px;
   color: #1a1a1a;
-  background: #E6E6E6 !important;
+  background: #E6E6E6;
   border-radius: 4px;
   border: 0;
   font-family: "Public Sans", sans-serif;
@@ -1837,6 +1847,46 @@ option {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.btn-alt:hover {
+.btn-alt:hover,
+.btn-info:hover,
+.btn-info-active:hover {
   opacity: 0.7;
+}
+
+.btn-info {
+  color: #FFFFFF;
+  background: #1F3748;
+  position: relative;
+  padding-right: 40px;
+}
+.btn-info::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/assets/svg/icon-open.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 48%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-info-active {
+  color: #FFFFFF;
+  background: #1F3748;
+  position: relative;
+  padding-right: 40px;
+}
+.btn-info-active::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/assets/svg/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 48%;
+  right: 5%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
