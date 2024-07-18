@@ -79,3 +79,24 @@ option {
   // colar o elemento (botao) no input
   transform: translate3d(-5px, 0, 0); // descer 6px no eixo y
 }
+
+.btn-alt {
+  display: inline-block;
+  padding: 10px 20px;
+
+  // use cores desejada...
+  color: $black-normal;
+  background: $white-normal !important;
+
+  border-radius: 4px;
+  border: 0;
+
+  @include typeface-2(p3, desktop);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}

@@ -620,10 +620,10 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-#eventos, .eventos-data {
+.eventos {
   box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1) !important;
 }
-#eventos:focus, .eventos-data:focus {
+.eventos:focus {
   border: 2px solid #1F3748;
   outline: none;
 }
@@ -1821,4 +1821,22 @@ option {
   border: 0;
   border-radius: 4px;
   transform: translate3d(-5px, 0, 0);
+}
+
+.btn-alt {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #1a1a1a;
+  background: #E6E6E6 !important;
+  border-radius: 4px;
+  border: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-alt:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */

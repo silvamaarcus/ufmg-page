@@ -53,8 +53,22 @@ function App() {
                 <Calendar />
               </div>
             </div>
+            <div className="flex-end-row mt-3">
+              <button className="btn-alt">Filtrar</button>
+            </div>
           </div>
         </div>
+        <div className="grid-2 disappear"></div>
+      </section>
+
+      <section className="container pt-1">
+        <div className="grid-2 disappear"></div>
+
+        <div className="grid-10 flex flex-wrap gap-2">
+          <div></div>
+          <div></div>
+        </div>
+
         <div className="grid-2 disappear"></div>
       </section>
     </>

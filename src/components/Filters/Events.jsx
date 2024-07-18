@@ -1,7 +1,7 @@
 const Events = () => {
   return (
     <>
-      <select id="eventos" name="eventos">
+      <select id="eventos" className="eventos">
         <option value="" disabled selected>
           Tipo de Evento
         </option>
