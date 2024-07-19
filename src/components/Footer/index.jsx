@@ -1,3 +1,9 @@
+import icon_instagram from "/assets/svg/icon-instagram.svg";
+import icon_tiktok from "/assets/svg/icon-tiktok.svg";
+import icon_facebook from "/assets/svg/icon-facebook.svg";
+import icon_linkedin from "/assets/svg/icon-linkedin.svg";
+import icon_whatsapp from "/assets/svg/icon-whatsapp.svg";
+
 const Footer = () => {
   return (
     <>
@@ -49,16 +55,35 @@ const Footer = () => {
               </div>
               <button className="btn">Enviar</button>
             </form>
-            <div className="flex-start-row">
+            <div className="flex-center gap-5 mt-5">
+              <a href="#">
+                <img src={icon_instagram} alt="Instagram" className="icon" />
+              </a>
+              <a href="#">
+                <img src={icon_tiktok} alt="Tiktok" className="icon" />
+              </a>
+              <a href="#">
+                <img src={icon_facebook} alt="Facebook" className="icon" />
+              </a>
+              <a href="#">
+                <img src={icon_linkedin} alt="Linkedin" className="icon" />
+              </a>
+              <a href="#">
+                <img src={icon_whatsapp} alt="Whatsapp" className="icon" />
+              </a>
             </div>
-            <p className="bold">Título Evento</p>
-            <div>
-              <p>Universidade Federal de Minas Gerais</p>
-              <p>Av. Antônio Carlos, 6627, Pampulha | Belo Horizonte | </p>
-              <p>MG | CEP: 31270-901</p>
+            <div className="text-center mt-5">
+              <div>
+                <p className="bold">Título Evento</p>
+                <p className="my-3">
+                  Universidade Federal de Minas Gerais <br />
+                  Av. Antônio Carlos, 6627, Pampulha | Belo Horizonte | <br />
+                  MG | CEP: 31270-901
+                </p>
+                <span className="p-title">Desenvolvido no Cedecom UFMG</span>
+              </div>
+              <p></p>
             </div>
-
-            <p></p>
           </div>
           <div className="grid-4 disappear"></div>
         </section>

@@ -68,7 +68,7 @@ function App() {
         <div className="grid-2 disappear"></div>
 
         <div className="grid-10">
-          <div className="flex gap-2 wrap-mobile">
+          <div className="flex-center gap-2 wrap-mobile">
             <div>
               <Cards />
             </div>
