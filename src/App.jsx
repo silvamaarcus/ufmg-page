@@ -1,3 +1,4 @@
+import Faq from "./components/Accordion";
 import Cards from "./components/Cards";
 import Calendar from "./components/Filters/Calendar";
 import Filtro from "./components/Filters/Events";
@@ -62,7 +63,7 @@ function App() {
         <div className="grid-2 disappear"></div>
       </section>
 
-      <section className="container pt-1">
+      <section className="container">
         <div className="grid-2 disappear"></div>
 
         <div className="grid-10">
@@ -74,11 +75,20 @@ function App() {
               <Cards />
             </div>
           </div>
-          <div className="flex-center mt-3">
+          <div className="flex-center mt-4">
             <button className="btn">Ver mais</button>
           </div>
         </div>
 
+        <div className="grid-2 disappear"></div>
+      </section>
+
+      <section className="container mt-4">
+        <div className="grid-2 disappear"></div>
+        <div className="grid-10">
+          <h4 className="text-center bold">Perguntas Frequentes</h4>
+          <Faq />
+        </div>
         <div className="grid-2 disappear"></div>
       </section>
     </>

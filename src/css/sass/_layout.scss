@@ -110,6 +110,10 @@ $gutter: 30px;
   }
 }
 
+.display-none {
+  display: none;
+}
+
 .hidden {
   // Evitar scroll para o lado, caso algum filho vaze o container.
   overflow: hidden;
@@ -248,7 +252,7 @@ $gutter: 30px;
 }
 // Largura de 100% do tamanho p/ o elemento em relação ao pai.
 .w-100 {
-  width: 100% ;
+  width: 100%;
 }
 // Largura de 75% do tamanho p/ o elemento em relação ao pai.
 .w-75 {
@@ -451,5 +455,51 @@ $gutter: 30px;
 .wrap-mobile {
   @include responsive(s) {
     flex-wrap: wrap;
+  }
+}
+
+// Accordions
+.accordion {
+  cursor: pointer;
+}
+
+.question {
+  padding: 16px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/svg/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    right: 0;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.question-active {
+  background-color: $primary-normal;
+  color: $white-normal;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/svg/icon-arrow-up.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    right: 0;
+
+    transform: translate(-50%, -50%);
   }
 }
