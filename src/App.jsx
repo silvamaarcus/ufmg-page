@@ -2,6 +2,7 @@ import Faq from "./components/Accordion";
 import Cards from "./components/Cards";
 import Calendar from "./components/Filters/Calendar";
 import Filtro from "./components/Filters/Events";
+import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 
 function App() {
@@ -88,9 +89,14 @@ function App() {
         <div className="grid-10">
           <h4 className="text-center bold">Perguntas Frequentes</h4>
           <Faq />
+          <div className="flex-center mt-4">
+            <button className="btn">Ver mais</button>
+          </div>
         </div>
         <div className="grid-2 disappear"></div>
       </section>
+
+      <Footer />
     </>
   );
 }

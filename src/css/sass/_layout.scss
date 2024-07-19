@@ -191,6 +191,7 @@ $gutter: 30px;
 }
 // Flexbox p/ que os elementos fiquem em colunas
 .flex-column {
+  display: flex;
   flex-direction: column;
 }
 // Flexbox p/ que os elementos quebrem a linha no container, quando necessario.
@@ -445,7 +446,7 @@ $gutter: 30px;
 // Filtros
 .eventos {
   box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1) !important;
-
+  border-radius: 4px;
   &:focus {
     border: 2px solid $primary-normal;
     outline: none;
@@ -502,4 +503,8 @@ $gutter: 30px;
 
     transform: translate(-50%, -50%);
   }
+}
+
+.bg-section-gray {
+  background: #f2f2f2 !important;
 }
