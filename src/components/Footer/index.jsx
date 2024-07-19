@@ -47,7 +47,18 @@ const Footer = () => {
                   className="eventos"
                 ></textarea>
               </div>
+              <button className="btn">Enviar</button>
             </form>
+            <div className="flex-start-row">
+            </div>
+            <p className="bold">Título Evento</p>
+            <div>
+              <p>Universidade Federal de Minas Gerais</p>
+              <p>Av. Antônio Carlos, 6627, Pampulha | Belo Horizonte | </p>
+              <p>MG | CEP: 31270-901</p>
+            </div>
+
+            <p></p>
           </div>
           <div className="grid-4 disappear"></div>
         </section>
