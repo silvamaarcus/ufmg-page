@@ -41,16 +41,21 @@ option {
   height: 48px;
 }
 
-.input-error {
-  color: $red-normal;
+.error-message {
+  color: $red-normal !important;
   position: relative;
-
+  padding-left: 24px;
   &::before {
     content: "";
     position: absolute;
     background-image: url("/assets/svg/icon-danger.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%, -50%);
   }
 }
 

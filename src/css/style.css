@@ -25,14 +25,6 @@
   color: #B64D34;
 }
 
-.color-green {
-  color: #0bb07b;
-}
-
-.color-yellow {
-  color: #ffce52;
-}
-
 .grid-1 {
   width: calc(7.1428571429% - 30px);
   margin: 15px;
@@ -530,44 +522,6 @@
 .profile-img {
   border-radius: 50%;
   border: 2px solid #1F3748;
-}
-
-.card {
-  border: 1px solid #454545;
-  border-radius: 4px;
-  background-color: rgba(15, 20, 31, 0);
-  transition: 0.2s ease;
-}
-.card:hover {
-  background-color: rgba(15, 20, 31, 0.2);
-}
-
-.bg-section {
-  background-color: rgba(15, 20, 31, 0.5);
-}
-
-.card-danger {
-  border: 2px solid #B64D34;
-  border-radius: 4px;
-  background-color: rgba(240, 61, 61, 0.2);
-}
-
-.card-success {
-  border: 2px solid #0bb07b;
-  border-radius: 4px;
-  background-color: rgba(11, 176, 123, 0.2);
-}
-
-.card-warning {
-  border: 2px solid #ffce52;
-  border-radius: 4px;
-  background-color: rgba(255, 206, 82, 0.2);
-}
-
-.card-info {
-  border: 2px solid #1F3748;
-  border-radius: 4px;
-  background-color: rgba(27, 105, 210, 0.2);
 }
 
 .banner {
@@ -1850,16 +1804,22 @@ option {
   height: 48px;
 }
 
-.input-error {
-  color: #B64D34;
+.error-message {
+  color: #B64D34 !important;
   position: relative;
+  padding-left: 24px;
 }
-.input-error::before {
+.error-message::before {
   content: "";
   position: absolute;
   background-image: url("/assets/svg/icon-danger.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
 }
 
 .btn {

@@ -15,8 +15,7 @@ const Footer = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => (e) => {
-    e.preventDefault();
+  const onSubmit = (data) => {
     return console.log(data);
   };
 
@@ -35,11 +34,11 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Digite o nome"
-                  className={errors?.name && "input-error"}
+                  className={errors?.name && "eventos"}
                   {...register("name", { required: true })}
                 />
                 {errors?.name && (
-                  <p className="error-message">Insira seu nome...</p>
+                  <p className="error-message p1">Insira seu nome...</p>
                 )}
               </div>
               <div>
@@ -49,17 +48,17 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Digite o email"
-                  className={errors?.email && "input-error"}
+                  className={errors?.email && "eventos"}
                   {...register("email", {
                     required: true,
                     validate: (value) => value.includes("@"),
                   })}
                 />
                 {errors?.email?.type === "required" && (
-                  <p className="error-message">Insira um e-mail...</p>
+                  <p className="error-message p1">Insira um e-mail...</p>
                 )}
                 {errors?.email && (
-                  <p className="error-message">E-mail inválido!</p>
+                  <p className="error-message p1">E-mail inválido!</p>
                 )}
               </div>
               <div>
@@ -68,11 +67,11 @@ const Footer = () => {
                 </label>
                 <input
                   type="text"
-                  className={errors?.title && "input-error"}
+                  className={errors?.title && "eventos"}
                   {...register("title", { required: true })}
                 />
                 {errors?.title && (
-                  <p className="error-message">Título inválido!</p>
+                  <p className="error-message p1">Título inválido!</p>
                 )}
               </div>
               <div>
@@ -82,7 +81,7 @@ const Footer = () => {
                 <textarea
                   id="content"
                   rows={5}
-                  className={errors?.content && "input-error"}
+                  className={errors?.content && "eventos"}
                   {...register("content", { required: true })}
                 ></textarea>
                 {errors?.content && (
