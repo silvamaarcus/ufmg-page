@@ -22,7 +22,7 @@
 }
 
 .color-red {
-  color: #f03d3d;
+  color: #B64D34;
 }
 
 .color-green {
@@ -547,7 +547,7 @@
 }
 
 .card-danger {
-  border: 2px solid #f03d3d;
+  border: 2px solid #B64D34;
   border-radius: 4px;
   background-color: rgba(240, 61, 61, 0.2);
 }
@@ -1848,6 +1848,18 @@ textarea {
 select,
 option {
   height: 48px;
+}
+
+.input-error {
+  color: #B64D34;
+  position: relative;
+}
+.input-error::before {
+  content: "";
+  position: absolute;
+  background-image: url("/assets/svg/icon-danger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn {

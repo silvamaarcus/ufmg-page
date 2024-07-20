@@ -41,6 +41,19 @@ option {
   height: 48px;
 }
 
+.input-error {
+  color: $red-normal;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/assets/svg/icon-danger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 // configurando botão principal
 .btn {
   display: inline-block;
