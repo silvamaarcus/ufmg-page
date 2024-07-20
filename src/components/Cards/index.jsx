@@ -1,8 +1,10 @@
+
+
+// Hooks
 import { useState } from "react";
 
 const Cards = () => {
   const [message, setMessage] = useState("Ver mais");
-
   const [btnActive, setBtnActive] = useState("btn-info");
 
   const handleClick = (e) => {
@@ -18,7 +20,7 @@ const Cards = () => {
 
   return (
     <>
-      <section className="flex-center gap-3 p-3 eventos">
+      <section className="flex-center gap-3 p-3 eventos ">
         <div className="flex-center-column">
           <h4 className="bold">18</h4>
           <h6 className="uppercase bb-black pb-min bold">mai</h6>

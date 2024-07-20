@@ -5,10 +5,8 @@ const Events = () => {
         <option value="" disabled selected>
           Tipo de Evento
         </option>
-        <option value="apple">Conversas</option>
-        <option value="banana">Palestras</option>
-        <option value="cherry">Ceminários</option>
-        <option value="date">Conferência</option>
+        <option value="talk">Conversas</option>
+        <option value="cerimony">Ceminários</option>
       </select>
     </>
   );

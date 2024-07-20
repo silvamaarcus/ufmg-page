@@ -1,7 +1,8 @@
 import Faq from "./components/Accordion";
 import Cards from "./components/Cards";
-import Calendar from "./components/Filters/Calendar";
-import Filtro from "./components/Filters/Events";
+import Filter from "./components/Filters/Filter";
+// import Calendar from "./components/Filters/Calendar";
+// import Filtro from "./components/Filters/Events";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 
@@ -44,38 +45,26 @@ function App() {
 
       <section className="container pt-4">
         <div className="grid-2 disappear"></div>
+
         <div className="grid-10 flex-column">
-          <h4 className="semi-bold text-center">Programação</h4>
-          <div className="flex-column mt-3">
-            <h6 className="bold">Filtros</h6>
-            <div className="flex-start-row gap-3 mt-3 wrap-mobile">
-              <div className="w-100">
-                <Filtro />
-              </div>
-              <div className="w-100">
-                <Calendar />
-              </div>
-            </div>
-            <div className="flex-end-row mt-3">
-              <button className="btn-alt">Filtrar</button>
-            </div>
-          </div>
+          <Filter />
         </div>
+
         <div className="grid-2 disappear"></div>
       </section>
 
       <section className="container">
         <div className="grid-2 disappear"></div>
 
-        <div className="grid-10">
-          <div className="flex-center gap-2 wrap-mobile">
+        <div className="grid-10 py-0 m-0">
+          {/* <div className="flex-center gap-3 pl-3 wrap-mobile">
             <div>
               <Cards />
             </div>
             <div>
               <Cards />
             </div>
-          </div>
+          </div> */}
           <div className="flex-center mt-4">
             <button className="btn">Ver mais</button>
           </div>
