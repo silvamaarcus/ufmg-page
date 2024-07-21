@@ -110,6 +110,11 @@ $gutter: 30px;
   }
 }
 
+.display {
+  display: block;
+}
+
+
 .display-none {
   display: none;
 }
@@ -253,7 +258,7 @@ $gutter: 30px;
 }
 // Largura de 100% do tamanho p/ o elemento em relação ao pai.
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 // Largura de 75% do tamanho p/ o elemento em relação ao pai.
 .w-75 {

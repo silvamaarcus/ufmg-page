@@ -1,8 +1,5 @@
 import Faq from "./components/Accordion";
-import Cards from "./components/Cards";
 import Filter from "./components/Filters/Filter";
-// import Calendar from "./components/Filters/Calendar";
-// import Filtro from "./components/Filters/Events";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 
@@ -46,32 +43,14 @@ function App() {
       <section className="container pt-4">
         <div className="grid-2 disappear"></div>
 
-        <div className="grid-10 flex-column">
+        <div className="grid-10">
           <Filter />
         </div>
 
         <div className="grid-2 disappear"></div>
       </section>
 
-      <section className="container">
-        <div className="grid-2 disappear"></div>
-
-        <div className="grid-10 py-0 m-0">
-          {/* <div className="flex-center gap-3 pl-3 wrap-mobile">
-            <div>
-              <Cards />
-            </div>
-            <div>
-              <Cards />
-            </div>
-          </div> */}
-          <div className="flex-center mt-4">
-            <button className="btn">Ver mais</button>
-          </div>
-        </div>
-
-        <div className="grid-2 disappear"></div>
-      </section>
+      
 
       <section className="container mt-4">
         <div className="grid-2 disappear"></div>

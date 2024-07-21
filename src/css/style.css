@@ -327,6 +327,10 @@
   }
 }
 
+.display {
+  display: block;
+}
+
 .display-none {
   display: none;
 }
@@ -447,7 +451,7 @@
 }
 
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-75 {
