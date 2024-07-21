@@ -409,7 +409,9 @@ $gutter: 30px;
 
 // Filtros
 .eventos {
-  box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1) !important;
+  box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1) ;
+  -webkit-box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1); /* Safari e Chrome */
+  -moz-box-shadow: 0px 1px 4px 3px rgba(173, 131, 131, 0.1);    /* Firefox */
   border-radius: 4px;
   &:focus {
     border: 2px solid $primary-normal;
