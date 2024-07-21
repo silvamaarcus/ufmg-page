@@ -61,20 +61,19 @@ const Filter = () => {
       <div className="flex-column mt-3">
         <h6 className="bold">Filtros</h6>
         <div className="flex-center gap-3 mt-3 wrap-mobile">
-          <div className="w-100">
-            <select className="eventos" onChange={handleTypeChange}>
+          <div className="w-100 eventos">
+            <select onChange={handleTypeChange}>
               <option value="" disabled selected>
                 Tipo de Evento
               </option>
               <option value="conversa">Conversa</option>
             </select>
           </div>
-          <div className="w-100">
+          <div className="w-100 eventos">
             <input
               type="date"
               value={filterDate}
               onChange={handleDateChange}
-              className="eventos"
             />
           </div>
         </div>
