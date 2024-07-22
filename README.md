@@ -39,7 +39,7 @@ Certifique-se de ter instalado o Node.js e o npm (ou yarn) em seu ambiente.
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd gerador-de-perfis
+   cd ufmg-page
    ```
 
 3. Instale as dependências:
@@ -71,6 +71,10 @@ Certifique-se de ter instalado o Node.js e o npm (ou yarn) em seu ambiente.
    ```
    http://localhost:5173
    ```
+
+## Sobre a API
+
+Para facilitar a listagem e gerenciamento de eventos da UFMG em nossa aplicação, desenvolvi uma API interna simples utilizando um arquivo JSON (db.json). Esta API serve como um banco de dados local, armazenando informações detalhadas sobre os eventos, como título, descrição, data, local e outras informações relevantes.
 
 ## Sobre o SASS
 
