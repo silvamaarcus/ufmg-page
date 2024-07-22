@@ -1,14 +1,19 @@
-// Components
+// Componentes
 import Cards from "../Cards/";
 
 // Hooks
 import { useState, useEffect } from "react";
 
+// Calendario
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { ptBR } from "date-fns/locale/pt-BR";
+
 const Filter = () => {
   const [divShow, setDivShow] = useState("display-none"); // Estado para controlar a visibilidade do contêiner de eventos filtrados
   const [events, setEvents] = useState([]); // Estado para armazenar todos os eventos do JSON
   const [filteredEvents, setFilteredEvents] = useState([]); // Estado para armazenar os eventos filtrados
-  const [filterDate, setFilterDate] = useState(""); // Estado para armazenar a data do filtro
+  const [filterDate, setFilterDate] = useState(null); // Estado para armazenar a data do filtro
   const [filterType, setFilterType] = useState(""); // Estado para armazenar o tipo do filtro
 
   // useEffect para buscar eventos do bd.json quando o componente for montado
@@ -28,7 +33,8 @@ const Filter = () => {
 
     // Filtrar por data se uma data for fornecida
     if (filterDate) {
-      filtered = filtered.filter((event) => event.data === filterDate);
+      const selectedDate = filterDate.toISOString().split("T")[0];
+      filtered = filtered.filter((event) => event.data === selectedDate);
     }
 
     // Filtrar por tipo de evento se um tipo for fornecido
@@ -46,8 +52,8 @@ const Filter = () => {
   };
 
   // Função para atualizar o estado do filtro de data
-  const handleDateChange = (e) => {
-    setFilterDate(e.target.value);
+  const handleDateChange = (date) => {
+    setFilterDate(date);
   };
 
   // Função para atualizar o estado do filtro de tipo
@@ -70,10 +76,14 @@ const Filter = () => {
             </select>
           </div>
           <div className="w-100 eventos">
-            <input
-              type="date"
-              value={filterDate}
+            <DatePicker
+              // showIcon
+              selected={filterDate}
               onChange={handleDateChange}
+              locale={ptBR}
+              dateFormat="dd-MM-yyyy" // Formato da data
+              placeholderText="Data"
+              className="calendar-width" // Classe para estilização
             />
           </div>
         </div>

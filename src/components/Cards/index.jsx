@@ -26,7 +26,7 @@ const Cards = ({ tipo, titulo, data, horario, conteudo, imagem }) => {
 
   return (
     <>
-      <section className="flex-center gap-3 p-3 eventos">
+      <section className="flex gap-3 p-3 eventos">
         <div className="flex-center-column">
           <h4 className="bold">{dia}</h4>
           <h6 className="uppercase bb-black pb-min bold">{mes}</h6>
