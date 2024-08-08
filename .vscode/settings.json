@@ -1,0 +1,19 @@
+{
+  "git.enabled": false,
+  "files.exclude": {
+    "node_modules": true,
+    ".gitignore": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "vite.config.js": true,
+    "public": false,
+    "jsconfig.json": true,
+    "yarn.lock": true,
+    ".eslintrc.json": true,
+    "next-env.d.ts": true,
+    "next.config.mjs": true,
+    "postcss.config.mjs": true,
+    "tsconfig.json": true,
+    ".next": true,
+  }
+}
