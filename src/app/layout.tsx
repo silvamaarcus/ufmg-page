@@ -3,6 +3,7 @@ import { Lexend, Public_Sans } from "next/font/google";
 import "./styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Header from "./components/Header";
+import Menu from "./components/Menu";
 
 // Lexend
 const lexendFontFamily = Lexend({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body>
         <NextUIProvider>
           <Header />
+          <Menu />
           {children}
         </NextUIProvider>
       </body>
