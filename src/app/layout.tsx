@@ -4,6 +4,7 @@ import "./styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 // Lexend
 const lexendFontFamily = Lexend({
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Header />
           <Menu />
           {children}
+          <Footer/>
         </NextUIProvider>
       </body>
     </html>

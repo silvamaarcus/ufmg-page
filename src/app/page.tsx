@@ -64,11 +64,10 @@ export default function Home() {
             <span className="text-base font-bold text-brand-dark pl-7 md:pl-0 lg:pl-0">
               Filtros
             </span>
-            <div className="my-5 flex gap-5 flex-wrap md:flex-nowrap lg:flex-nowrap px-6 md:px-0 lg:px-0">
+            <div className="my-5 grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 sm:px-0">
               <Autocomplete
                 value={selectedEvent}
                 onChange={handleChange}
-                className="w-[436px]"
                 placeholder="Tipos de evento"
               >
                 {eventos.map((evento) => (
@@ -77,10 +76,10 @@ export default function Home() {
                   </AutocompleteItem>
                 ))}
               </Autocomplete>
-              <DatePicker className="w-[436px]" />
+              <DatePicker  />
             </div>
 
-            <div className="flex justify-end">
+            <div className="flex justify-end pr-6 sm:pr-0">
               <Button className="rounded-sm">Filtrar</Button>
             </div>
           </div>
@@ -90,7 +89,6 @@ export default function Home() {
 
       <section className="container mx-auto grid grid-cols-1 sm:grid-cols-12 gap-8 my-20">
         <Disappear />
-        {/* <div className="col-span-2 hidden sm:block"></div> */}
         <div className="col-span-8 px-6 sm:px-0">
           <h1 className="font-title font-bold text-center text-brand-dark text-3xl">
             Perguntas frequentes
